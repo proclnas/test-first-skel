@@ -22,7 +22,7 @@ So in the `project-name` folder the following structure we'll be created:
   - phpcs.xml
   | ---- Coding standard configuration, default: PSR-2 standards
   - README.md
-  | ---- Some presentation about your new and freshy project :)
+  | ---- Some presentation about your new project :)
 ```
 
 #### Pre configured composer commands
