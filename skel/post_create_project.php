@@ -30,7 +30,7 @@ foreach (glob("skel/templates/{,.}*-dist", GLOB_BRACE) as $distfile) {
     );
 
     if ($isDir) {
-        mkdir($target);
+        mkdir($target, 0777, true);
         continue;
     }
 
