@@ -5,7 +5,7 @@ A simple skel with psr-4 autoload and phpunit/code coverage pre-configured
 
 #### Creating a project with this skeleton:
 ```
-$ composer create-project proclnas/test-first-skel project-name
+$ composer create-project -sdev proclnas/test-first-skel project-name
 ```
 
 So in the `project-name` folder the following structure we'll be created:
