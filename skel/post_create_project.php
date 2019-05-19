@@ -20,12 +20,21 @@ $replaces = [
 // else than in the projects root directory
 foreach (glob("skel/templates/{,.}*-dist", GLOB_BRACE) as $distfile) {
     $target = substr($distfile, 15, -5);
+    $isDir = is_dir($distfile);
  
     // First we copy the dist file to its new location,
     // overwriting files we might already have there.
-    echo "creating clean file ($target) from dist ($distfile)...\n";
+    echo sprintf(
+        "creating clean %s ($target) from dist ($distfile)...\n",
+        $isDir ? 'dir' : 'file'
+    );
+
+    if ($isDir) {
+        mkdir($target);
+        continue;
+    }
+
     copy($distfile, $target);
- 
     // Then we apply our replaces for within those templates.
     echo "applying variables to $target...\n";
     applyValues($target, $replaces);
