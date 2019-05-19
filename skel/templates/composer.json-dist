@@ -1,0 +1,23 @@
+{
+    "name": "edit-with-your-vendor-name/{{ projectname }}",
+    "description": "undescribed package",
+    "license": "proprietary",
+    "keywords": [
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{ root-namespace }}\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "check": "phpcs -p --standard=phpcs.xml",
+        "fix": "phpcbf -p --standard=phpcs.xml"
+    }
+}

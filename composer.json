@@ -1,0 +1,23 @@
+{
+    "name": "proclnas/test-first-skel",
+    "description": "A simple skel to start your project with test-first in mind",
+    "type": "project",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo Nas",
+            "email": "proclnas@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "php skel/post_create_project.php"
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+Test First Skel
+--
+
+A simple skel with psr-4 autoload and phpunit/code coverage pre-configured
+
+#### Creating a project with this skeleton:
+```
+$ composer create-project proclnas/test-first-skel project-name
+```
+
+So in the `project-name` folder the following structure we'll be created:
+```
+- project-name
+  - src
+  | ---- Your default namespace, which was generated dinamically with name: ProjectName
+  - CHANGELOG.md
+  | ---- Changelog to keep your updates and new features
+  - composer.json
+  | ---- A generic composer file with some basic configuration and namespace already configurated
+  - phpunit.xml
+  | ---- Phpunit configuration file, code coverage included
+  - phpcs.xml
+  | ---- Coding standard configuration, default: PSR-2 standards
+  - README.md
+  | ---- Some presentation about your new and freshy project :)
+```
+
+#### Pre configured composer commands
+
+- Run phpunit test suit
+    - `$ composer run-script test`
+- Check for errors with phpcs based on PSR-2 standards
+    - `$ composer run-script check`
+- Fix issues found by phpcs using phpcbf
+    - `$ composer run-script fix`
